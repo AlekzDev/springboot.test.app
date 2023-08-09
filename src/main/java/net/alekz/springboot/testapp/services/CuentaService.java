@@ -11,5 +11,5 @@ public interface CuentaService {
     Cuenta findById(Long id);
     int obtenerTotalTransferencias(Long bancoId);
     BigDecimal obtenerSaldo(Long cuentaId);
-    void transferir(Long numCuentaOrigen, Long numCuentaDestino, BigDecimal monto);
+    void transferir(Long numCuentaOrigen, Long numCuentaDestino, BigDecimal monto, Long bancoId);
 }
